@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "899242908709",
+    "firebase_url": "https://android2-7a166.firebaseio.com",
+    "project_id": "android2-7a166",
+    "storage_bucket": "android2-7a166.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899242908709:android:1ab16bb804719fcf01b3cc",
+        "android_client_info": {
+          "package_name": "com.openclassrooms.projetCciTakeItSmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899242908709-9njje6hippcm5rdnk34imr7d9njvq3to.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVQKnjZVqKvfKYijDhuo-ID_W17uMUSCQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899242908709-9njje6hippcm5rdnk34imr7d9njvq3to.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

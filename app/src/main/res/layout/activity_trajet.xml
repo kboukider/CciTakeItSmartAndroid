@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.openclassrooms.projetCciTakeItSmart.trajet.TrajetActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- TRAJET DATA CONTAINER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="@dimen/default_large_margin">
+
+            <!-- FIREBASE IMAGE -->
+            <ImageView
+                android:layout_width="93dp"
+                android:layout_height="70dp"
+                android:background="@drawable/ic_logo_auth" />
+
+            <!-- PROGRESS BAR -->
+            <ProgressBar
+                android:id="@+id/profile_activity_progress_bar"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:visibility="invisible"
+                android:layout_margin="@dimen/default_large_margin"/>
+
+            <!-- TRAJET IMAGE -->
+            <ImageView
+                android:id="@+id/profile_activity_imageview_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_anon_user_48dp"/>
+
+        </LinearLayout>
+
+
+        <!-- TRAJET DEPART -->
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/profile_activity_edit_text_depart"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="@dimen/default_text_size"
+            android:hint="Ville de départ, ex: Tours"
+            android:layout_margin="@dimen/default_margin"/>
+
+
+        <!-- TRAJET ARRIVEE -->
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/profile_activity_edit_text_arrivee"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="@dimen/default_text_size"
+            android:hint="Ville d'arrivée, ex : Paris"
+            android:layout_margin="@dimen/default_margin"/>
+
+        <!-- TRAJET DATE -->
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/profile_activity_edit_text_date"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="@dimen/default_text_size"
+            android:hint="Date de départ, ex: 01/06/2020"
+            android:layout_margin="@dimen/default_margin"/>
+
+        <!-- TRAJET Heure -->
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/profile_activity_edit_text_heure"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="@dimen/default_text_size"
+            android:hint="Heure de départ, ex : 13:30"
+            android:layout_margin="@dimen/default_margin"/>
+
+        <!-- TRAJET PRIX -->
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/profile_activity_edit_text_prix"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="@dimen/default_text_size"
+            android:hint="Prix, ex: 80 euros"
+            android:layout_margin="@dimen/default_margin"/>
+
+        <!-- TRAJET COMMENTAIRE -->
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/profile_activity_edit_text_commentaire"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="@dimen/default_text_size"
+            android:hint="Votre commentaire, ex: pas d'animaux svp"
+            android:layout_margin="@dimen/default_margin"/>
+
+        <!-- TRAJET EMAIL CONTAINER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/default_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_email"
+                android:textSize="@dimen/default_text_size"
+                android:textStyle="bold"/>
+
+            <!-- PROFILE EMAIL -->
+            <TextView
+                android:id="@+id/profile_activity_text_view_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/default_text_size"
+                android:paddingLeft="@dimen/default_margin"/>
+
+        </LinearLayout>
+
+        <!-- CHECKBOX POIDS1 -->
+        <CheckBox
+            android:id="@+id/profile_activity_check_box_poids1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="vous acceptez moins de 20 kg ?"/>
+
+        <!-- CHECKBOX POIDS2 -->
+        <CheckBox
+            android:id="@+id/profile_activity_check_box_poids2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="vous acceptez plus de 20 kg ?"/>
+
+
+        <!-- BUTTON UPDATE TRAJET -->
+        <Button
+            android:id="@+id/profile_activity_button_update"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="@dimen/default_margin"
+            android:background="@drawable/button_radius_primary_color"
+            android:padding="@dimen/default_margin"
+            android:text="Enregistrer/mettre à jour le trajet"
+            android:textColor="#fff"
+            android:textSize="@dimen/default_text_size" />
+
+        <!-- BUTTON SIGN OUT -->
+        <Button
+            android:id="@+id/profile_activity_button_sign_out"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="@dimen/default_margin"
+            android:background="@drawable/button_radius_accent_color"
+            android:padding="@dimen/default_margin"
+            android:text="@string/button_sign_out_account"
+            android:textColor="#fff"
+            android:textSize="@dimen/default_text_size" />
+
+        <!-- BUTTON DELETE TRAJET -->
+        <Button
+            android:id="@+id/profile_activity_button_delete"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="@dimen/default_margin"
+            android:background="@drawable/button_radius_error_color"
+            android:padding="@dimen/default_margin"
+            android:text="Supprimer le trajet"
+            android:textColor="#fff"
+            android:textSize="@dimen/default_text_size" />
+
+    </LinearLayout>
+
+</LinearLayout>
